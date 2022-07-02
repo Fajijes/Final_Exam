@@ -2,22 +2,22 @@
 // массива строк формирует массив из строк,
 // длина которых <=3 символа.
 
-void MethodCreateOriginArray(string[] array)
+void MethodCreateInputArray(string[] InputArray)
 {
-    Console.Write($"Origin array: ");
-    for (int i = 0; i < array.Length; i++) Console.Write($"{array[i]} ");
+    Console.Write($"Input array: ");
+    for (int i = 0; i < InputArray.Length; i++) Console.Write($"{InputArray[i]} ");
     Console.WriteLine();
 }
 
-void MethodCreateNewArray(string[] array)
+void MethodCreateOutputArray(string[] OutputArray)
 {
-    Console.Write($"New array: ");
-    string[] newarr = new string[array.Length];
-    for (int i = 0; i < array.Length; i++)
+    Console.Write($"Output array: ");
+    string[] newarr = new string[OutputArray.Length];
+    for (int i = 0; i < OutputArray.Length; i++)
     {
-        if (array[i].Length <= 3)
+        if (OutputArray[i].Length <= 3)
         {
-            newarr[i] = array[i];
+            newarr[i] = OutputArray[i];
             Console.Write($"{newarr[i]} ");
         }
     }
@@ -26,6 +26,8 @@ void MethodCreateNewArray(string[] array)
 
 string[] array = { "hello_world", "2", "L0L", ":-)" , "123", "^_^", "wiz"};
 
-MethodCreateOriginArray(array);
-MethodCreateNewArray(array);
-
+Console.WriteLine();
+MethodCreateInputArray(array);
+Console.WriteLine();
+MethodCreateOutputArray(array);
+Console.WriteLine();
