@@ -7,7 +7,7 @@
 # .NET Core build folders
 bin/
 obj/
-Program.csproj/
+
 
 # Common node modules locations
 /node_modules
